@@ -5,8 +5,11 @@ var pets = {
 }
 
 function getInfo(object) {
-    console.log("Pet is:");
-    console.log(pets);
+    for (let key in pets){
+        console.log(key + ': ' + pets[key]);
+    //console.log("Pet is:");
+    //console.log(pets);
+}
 }
 getInfo(pets);
 pets.breed = "bulldog";
